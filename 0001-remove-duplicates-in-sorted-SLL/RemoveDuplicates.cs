@@ -17,7 +17,8 @@ public class Solution
             while(nextDistinctNode!=null && nextDistinctNode.value == currentNode.value){
                 nextDistinctNode = nextDistinctNode.next;
             }
-            currentNode.next = nextDistinctNode.next;
+            //currentNode.next = nextDistinctNode.next;
+            currentNode.next = nextDistinctNode;
             currentNode = nextDistinctNode;
         }
         return head;
